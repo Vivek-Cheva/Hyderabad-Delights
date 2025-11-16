@@ -1449,7 +1449,7 @@
         <div class="hero-content">
             <div class="hero-badge">
                 <i class="fas fa-award"></i>
-                <span>Hyderabad's #1 Catering Since 2010</span>
+                <span>Hyderabad's #1 Catering Since 2020</span>
             </div>
             <h1>Delicious South Indian Catering for Every Occasion</h1>
             <p>Where tradition meets taste, and every bite tells a story!</p>
@@ -1530,7 +1530,7 @@
 
             <div class="package-card">
                 <div class="package-header">
-                    <img src="https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=500" alt="Vegetarian" class="package-image">
+                    <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=500" alt="Vegetarian" class="package-image">
                     <div class="package-overlay">
                         <h3>Vegetarian Feast</h3>
                         <div class="package-price">Starting @ ₹299<span>/person</span></div>
@@ -1870,8 +1870,40 @@
                         icon: '🍿',
                         maxFree: 2,
                         items: [
-                            { id: 's1', name: 'Samosa', price: 35, img: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200', desc: 'Crispy pastry with spiced filling', chef: false, best: true, default: true },
-                            { id: 's2', name: 'Pakoda', price: 40, img: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=200', desc: 'Mixed vegetable fritters', chef: false, best: true, default: true }
+                            { id: 's1', name: 'Samosa', price: 35, img: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200', desc: 'Crispy pastry filled with spiced potatoes and peas', chef: false, best: true, default: true },
+                            { id: 's2', name: 'Pakoda', price: 40, img: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=200', desc: 'Mixed vegetable fritters, deep-fried to golden perfection', chef: false, best: true, default: true },
+                            { id: 's3', name: 'Banana Chips', price: 30, img: 'https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=200', desc: 'Crispy fried banana slices', chef: false, best: false },
+                            { id: 's4', name: 'Murukku', price: 35, img: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200', desc: 'Crunchy rice flour spirals', chef: true, best: false }
+                        ]
+                    },
+                    chaats: {
+                        name: 'Chaats',
+                        icon: '🥘',
+                        maxFree: 1,
+                        items: [
+                            { id: 's5', name: 'Bhel Puri', price: 50, img: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=200', desc: 'Puffed rice with tangy chutneys, onions, and sev', chef: false, best: true, default: true },
+                            { id: 's6', name: 'Dahi Puri', price: 55, img: 'https://images.unsplash.com/photo-1626074353765-517a681e40be?w=200', desc: 'Crispy puri filled with yogurt and sweet chutney', chef: true, best: false },
+                            { id: 's7', name: 'Papdi Chaat', price: 55, img: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200', desc: 'Crispy wafers with chickpeas and tangy sauces', chef: false, best: false }
+                        ]
+                    },
+                    sweets: {
+                        name: 'Sweet Treats',
+                        icon: '🍬',
+                        maxFree: 1,
+                        items: [
+                            { id: 's8', name: 'Gulab Jamun', price: 40, img: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=200', desc: 'Soft milk dumplings soaked in rose-flavored sugar syrup', chef: false, best: true, default: true },
+                            { id: 's9', name: 'Jalebi', price: 45, img: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=200', desc: 'Crispy sweet pretzel soaked in sugar syrup', chef: false, best: false },
+                            { id: 's10', name: 'Mysore Pak', price: 50, img: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=200', desc: 'Rich gram flour fudge with ghee', chef: true, best: false }
+                        ]
+                    },
+                    drinks: {
+                        name: 'Beverages',
+                        icon: '🥤',
+                        maxFree: 1,
+                        items: [
+                            { id: 's11', name: 'Masala Chai', price: 20, img: 'https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=200', desc: 'Spiced milk tea with aromatic spices', chef: false, best: true, default: true },
+                            { id: 's12', name: 'Buttermilk', price: 25, img: 'https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=200', desc: 'Spiced yogurt drink, refreshing and cool', chef: false, best: false },
+                            { id: 's13', name: 'Lemonade', price: 30, img: 'https://images.unsplash.com/photo-1523677011781-c91d1bbe2f9d?w=200', desc: 'Fresh lime soda with a tangy twist', chef: false, best: false }
                         ]
                     }
                 }
@@ -1885,8 +1917,57 @@
                         icon: '🥟',
                         maxFree: 1,
                         items: [
-                            { id: 'v1', name: 'Paneer 65', price: 80, img: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=200', desc: 'Spicy fried cottage cheese with a crispy coating and bold flavors', chef: true, best: true, default: true },
-                            { id: 'v2', name: 'Gobi Manchurian', price: 70, img: 'https://images.unsplash.com/photo-1626074353765-517a681e40be?w=200', desc: 'Indo-Chinese cauliflower', chef: false, best: true }
+                            { id: 'v1', name: 'Paneer 65', price: 80, img: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=200', desc: 'Spicy fried cottage cheese with a crispy coating and bold flavors that will tantalize your taste buds', chef: true, best: true, default: true },
+                            { id: 'v2', name: 'Gobi Manchurian', price: 70, img: 'https://images.unsplash.com/photo-1626074353765-517a681e40be?w=200', desc: 'Indo-Chinese cauliflower florets in tangy sauce', chef: false, best: true },
+                            { id: 'v3', name: 'Veg Spring Rolls', price: 75, img: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=200', desc: 'Crispy veggie rolls with sweet chili dip', chef: false, best: false },
+                            { id: 'v4', name: 'Crispy Corn', price: 65, img: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=200', desc: 'Spicy fried corn kernels with herbs', chef: false, best: false },
+                            { id: 'v5', name: 'Mushroom Pepper Fry', price: 85, img: 'https://images.unsplash.com/photo-1533742720175-d4c163bc7a6d?w=200', desc: 'Pan-fried mushrooms with black pepper and spices', chef: true, best: false }
+                        ]
+                    },
+                    curries: {
+                        name: 'Curries',
+                        icon: '🍛',
+                        maxFree: 2,
+                        items: [
+                            { id: 'v6', name: 'Dal Tadka', price: 60, img: 'https://images.unsplash.com/photo-1645696258238-71b3574c5193?w=200', desc: 'Tempered yellow lentils with aromatic spices', chef: false, best: true, default: true },
+                            { id: 'v7', name: 'Paneer Butter Masala', price: 95, img: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=200', desc: 'Creamy tomato-based paneer curry with rich butter flavor', chef: true, best: true, default: true },
+                            { id: 'v8', name: 'Mix Veg Curry', price: 75, img: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=200', desc: 'Assorted vegetables in flavorful gravy', chef: false, best: false },
+                            { id: 'v9', name: 'Baingan Bharta', price: 70, img: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200', desc: 'Smoky mashed eggplant with onions and tomatoes', chef: true, best: false },
+                            { id: 'v10', name: 'Aloo Gobi', price: 65, img: 'https://images.unsplash.com/photo-1505253758473-96b7015fcd40?w=200', desc: 'Potato and cauliflower stir-fry with turmeric', chef: false, best: false }
+                        ]
+                    },
+                    biryani: {
+                        name: 'Biryani',
+                        icon: '🍚',
+                        maxFree: 1,
+                        items: [
+                            { id: 'v11', name: 'Veg Biryani', price: 90, img: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200', desc: 'Fragrant basmati rice cooked with mixed vegetables and aromatic spices', chef: false, best: true, default: true },
+                            { id: 'v12', name: 'Hyderabadi Veg Dum Biryani', price: 110, img: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200', desc: 'Slow-cooked aromatic biryani in dum style', chef: true, best: true },
+                            { id: 'v13', name: 'Paneer Biryani', price: 120, img: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200', desc: 'Biryani with marinated paneer cubes', chef: true, best: false },
+                            { id: 'v14', name: 'Mushroom Biryani', price: 105, img: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200', desc: 'Aromatic rice with button mushrooms', chef: false, best: false }
+                        ]
+                    },
+                    desserts: {
+                        name: 'Desserts',
+                        icon: '🍮',
+                        maxFree: 1,
+                        items: [
+                            { id: 'v15', name: 'Gulab Jamun', price: 40, img: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=200', desc: 'Soft milk dumplings in rose-scented sugar syrup', chef: false, best: true, default: true },
+                            { id: 'v16', name: 'Rasmalai', price: 50, img: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=200', desc: 'Cottage cheese discs in sweetened, thickened milk', chef: true, best: true },
+                            { id: 'v17', name: 'Double Ka Meetha', price: 55, img: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=200', desc: 'Hyderabadi bread pudding with dry fruits', chef: true, best: false },
+                            { id: 'v18', name: 'Kheer', price: 45, img: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=200', desc: 'Rice pudding with nuts and cardamom', chef: false, best: false },
+                            { id: 'v19', name: 'Gajar Halwa', price: 60, img: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=200', desc: 'Caramelized carrot dessert with ghee', chef: false, best: false }
+                        ]
+                    },
+                    drinks: {
+                        name: 'Beverages',
+                        icon: '🥤',
+                        maxFree: 1,
+                        items: [
+                            { id: 'v20', name: 'Buttermilk', price: 20, img: 'https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=200', desc: 'Spiced yogurt drink, refreshing and digestive', chef: false, best: true, default: true },
+                            { id: 'v21', name: 'Mango Lassi', price: 35, img: 'https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=200', desc: 'Sweet mango yogurt drink, creamy and delicious', chef: false, best: true },
+                            { id: 'v22', name: 'Sweet Lassi', price: 30, img: 'https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=200', desc: 'Sweetened yogurt drink with rose water', chef: false, best: false },
+                            { id: 'v23', name: 'Filter Coffee', price: 25, img: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?w=200', desc: 'Traditional South Indian coffee', chef: false, best: false }
                         ]
                     }
                 }
@@ -1900,7 +1981,56 @@
                         icon: '🍗',
                         maxFree: 1,
                         items: [
-                            { id: 'n1', name: 'Chicken 65', price: 100, img: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=200', desc: 'Spicy fried chicken chunks', chef: true, best: true, default: true }
+                            { id: 'n1', name: 'Chicken 65', price: 100, img: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=200', desc: 'Spicy fried chicken chunks marinated in South Indian spices', chef: true, best: true, default: true },
+                            { id: 'n2', name: 'Apollo Fish', price: 120, img: 'https://images.unsplash.com/photo-1580959375944-1ab5b8c78c01?w=200', desc: 'Tangy fried fish strips with curry leaves', chef: true, best: true },
+                            { id: 'n3', name: 'Mutton Pepper Fry', price: 150, img: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=200', desc: 'Spicy mutton with crushed black pepper', chef: true, best: false },
+                            { id: 'n4', name: 'Prawn Fry', price: 180, img: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=200', desc: 'Crispy fried prawns with spicy masala', chef: false, best: false },
+                            { id: 'n5', name: 'Fish Fingers', price: 110, img: 'https://images.unsplash.com/photo-1580959375944-1ab5b8c78c01?w=200', desc: 'Breaded fish strips, crispy and golden', chef: false, best: false }
+                        ]
+                    },
+                    curries: {
+                        name: 'Curries',
+                        icon: '🍛',
+                        maxFree: 2,
+                        items: [
+                            { id: 'n6', name: 'Chicken Curry', price: 110, img: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=200', desc: 'Traditional chicken curry with aromatic gravy', chef: false, best: true, default: true },
+                            { id: 'n7', name: 'Mutton Rogan Josh', price: 180, img: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=200', desc: 'Rich aromatic mutton curry with Kashmiri spices', chef: true, best: true, default: true },
+                            { id: 'n8', name: 'Fish Pulusu', price: 140, img: 'https://images.unsplash.com/photo-1580959375944-1ab5b8c78c01?w=200', desc: 'Tangy tamarind fish curry from coastal Andhra', chef: true, best: false },
+                            { id: 'n9', name: 'Egg Curry', price: 80, img: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=200', desc: 'Boiled eggs in spicy onion-tomato gravy', chef: false, best: false },
+                            { id: 'n10', name: 'Prawn Masala', price: 200, img: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=200', desc: 'Prawns cooked in rich, spicy masala gravy', chef: true, best: false }
+                        ]
+                    },
+                    biryani: {
+                        name: 'Biryani',
+                        icon: '🍚',
+                        maxFree: 1,
+                        items: [
+                            { id: 'n11', name: 'Chicken Biryani', price: 140, img: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200', desc: 'Fragrant rice layered with tender chicken and aromatic spices', chef: true, best: true, default: true },
+                            { id: 'n12', name: 'Hyderabadi Mutton Biryani', price: 220, img: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200', desc: 'Royal dum-cooked mutton biryani, the pride of Hyderabad', chef: true, best: true },
+                            { id: 'n13', name: 'Prawns Biryani', price: 240, img: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200', desc: 'Aromatic rice cooked with succulent prawns', chef: true, best: false },
+                            { id: 'n14', name: 'Fish Biryani', price: 180, img: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200', desc: 'Flavorful fish biryani with coastal flavors', chef: false, best: false }
+                        ]
+                    },
+                    desserts: {
+                        name: 'Desserts',
+                        icon: '🍮',
+                        maxFree: 1,
+                        items: [
+                            { id: 'n15', name: 'Gulab Jamun', price: 40, img: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=200', desc: 'Soft milk dumplings in rose-scented syrup', chef: false, best: true, default: true },
+                            { id: 'n16', name: 'Rasmalai', price: 50, img: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=200', desc: 'Cottage cheese discs in sweet, thickened milk', chef: true, best: true },
+                            { id: 'n17', name: 'Double Ka Meetha', price: 55, img: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=200', desc: 'Hyderabadi bread pudding with dry fruits', chef: true, best: false },
+                            { id: 'n18', name: 'Qubani Ka Meetha', price: 60, img: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=200', desc: 'Apricot dessert, a Hyderabadi specialty', chef: true, best: false }
+                        ]
+                    },
+                    drinks: {
+                        name: 'Beverages',
+                        icon: '🥤',
+                        maxFree: 1,
+                        items: [
+                            { id: 'n20', name: 'Buttermilk', price: 20, img: 'https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=200', desc: 'Spiced yogurt drink, cooling and refreshing', chef: false, best: true, default: true },
+                            { id: 'n21', name: 'Mango Lassi', price: 35, img: 'https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=200', desc: 'Sweet mango yogurt drink', chef: false, best: true },
+                            { id: 'n22', name: 'Sweet Lassi', price: 30, img: 'https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=200', desc: 'Sweetened yogurt drink', chef: false, best: false },
+                            { id: 'n23', name: 'Irani Chai', price: 20, img: 'https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=200', desc: 'Hyderabadi milk tea, strong and sweet', chef: false, best: false }
                         ]
                     }
                 }
@@ -1914,7 +2044,56 @@
                         icon: '🍗',
                         maxFree: 2,
                         items: [
-                            { id: 'sp1', name: 'Tandoori Chicken', price: 140, img: 'https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=200', desc: 'Clay oven roasted chicken', chef: true, best: true, default: true }
+                            { id: 'sp1', name: 'Assorted Starters Platter', price: 150, img: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=200', desc: 'Mix of veg and non-veg starters for variety', chef: true, best: true, default: true },
+                            { id: 'sp2', name: 'Tandoori Chicken', price: 140, img: 'https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=200', desc: 'Clay oven roasted chicken with smoky flavors', chef: true, best: true, default: true },
+                            { id: 'sp3', name: 'Paneer Tikka', price: 120, img: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=200', desc: 'Grilled cottage cheese cubes marinated in spices', chef: true, best: false },
+                            { id: 'sp4', name: 'Seekh Kebab', price: 160, img: 'https://images.unsplash.com/photo-1603360946369-dc9bb56dff83?w=200', desc: 'Spiced minced meat skewers grilled to perfection', chef: true, best: false },
+                            { id: 'sp5', name: 'Malai Chicken', price: 130, img: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=200', desc: 'Creamy marinated chicken tikka', chef: false, best: false }
+                        ]
+                    },
+                    curries: {
+                        name: 'Curries',
+                        icon: '🍛',
+                        maxFree: 2,
+                        items: [
+                            { id: 'sp6', name: 'Special Mix Curry', price: 140, img: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=200', desc: 'Assorted veg and meat curries in rich gravy', chef: true, best: true, default: true },
+                            { id: 'sp7', name: 'Mutton Korma', price: 220, img: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=200', desc: 'Rich creamy mutton curry with aromatic spices', chef: true, best: true, default: true },
+                            { id: 'sp8', name: 'Dal Makhani', price: 90, img: 'https://images.unsplash.com/photo-1645696258238-71b3574c5193?w=200', desc: 'Creamy black lentils slow-cooked overnight', chef: true, best: false },
+                            { id: 'sp9', name: 'Butter Chicken', price: 160, img: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=200', desc: 'Tomato-butter chicken curry, rich and creamy', chef: true, best: true },
+                            { id: 'sp10', name: 'Gongura Mutton', price: 240, img: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=200', desc: 'Tangy sorrel leaves mutton curry, Andhra style', chef: true, best: false }
+                        ]
+                    },
+                    biryani: {
+                        name: 'Biryani',
+                        icon: '🍚',
+                        maxFree: 1,
+                        items: [
+                            { id: 'sp11', name: 'Premium Dum Biryani', price: 180, img: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200', desc: 'Slow-cooked royal biryani with premium ingredients', chef: true, best: true, default: true },
+                            { id: 'sp12', name: 'Hyderabadi Kacchi Gosht Biryani', price: 280, img: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200', desc: 'Raw mutton layered biryani, the ultimate delicacy', chef: true, best: true },
+                            { id: 'sp13', name: 'Zafrani Chicken Biryani', price: 200, img: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200', desc: 'Saffron-infused chicken biryani with rich aroma', chef: true, best: false },
+                            { id: 'sp14', name: 'Special Veg Biryani', price: 140, img: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200', desc: 'Premium mixed veg biryani with dry fruits', chef: false, best: false }
+                        ]
+                    },
+                    desserts: {
+                        name: 'Desserts',
+                        icon: '🍮',
+                        maxFree: 2,
+                        items: [
+                            { id: 'sp15', name: 'Assorted Desserts', price: 70, img: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=200', desc: 'Selection of premium Indian sweets', chef: true, best: true, default: true },
+                            { id: 'sp16', name: 'Shahi Tukda', price: 65, img: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=200', desc: 'Royal bread pudding with saffron and nuts', chef: true, best: true, default: true },
+                            { id: 'sp17', name: 'Phirni', price: 55, img: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=200', desc: 'Ground rice pudding in earthen pots', chef: true, best: false },
+                            { id: 'sp18', name: 'Kulfi', price: 50, img: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=200', desc: 'Traditional Indian ice cream with pistachios', chef: false, best: false }
+                        ]
+                    },
+                    drinks: {
+                        name: 'Beverages',
+                        icon: '🥤',
+                        maxFree: 1,
+                        items: [
+                            { id: 'sp20', name: 'Welcome Drink', price: 40, img: 'https://images.unsplash.com/photo-1546548970-71785318a17b?w=200', desc: 'Refreshing mocktail to welcome your guests', chef: false, best: true, default: true },
+                            { id: 'sp21', name: 'Fresh Juice', price: 45, img: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=200', desc: 'Seasonal fresh fruit juice', chef: false, best: true },
+                            { id: 'sp22', name: 'Soft Drinks', price: 35, img: 'https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=200', desc: 'Chilled carbonated beverages', chef: false, best: false },
+                            { id: 'sp23', name: 'Masala Chai', price: 25, img: 'https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=200', desc: 'Spiced milk tea with aromatic masala', chef: false, best: false }
                         ]
                     }
                 }
